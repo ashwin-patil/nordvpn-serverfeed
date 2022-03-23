@@ -1,0 +1,27 @@
+﻿name: Daily Nord VPN Servers Feed
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "0 0 * * *" # Runs at 00:00 AM (UTC) everyday (Check https://crontab.tech/)
+
+jobs:
+  hello-world:
+    name: Hello world
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🍽️ Checkout the repo
+      uses: actions/checkout@master
+    - name: 🐍 Set up Python 3.8
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.8' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+        architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
+    - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests pandas 
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - run: python get-nordvpnservers.py
