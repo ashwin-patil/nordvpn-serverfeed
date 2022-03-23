@@ -8,8 +8,8 @@ on:
     - cron: "0 0 * * *" # Runs at 00:00 AM (UTC) everyday (Check https://crontab.tech/)
 
 jobs:
-  hello-world:
-    name: Hello world
+  download-nordvpnservers:
+    name: Download Nord VPN Servers via API
     runs-on: ubuntu-latest
     steps:
       - name: 🍽️ Checkout the repo
