@@ -27,4 +27,4 @@ jobs:
           pip install requests pandas
 
       - name: 🚀 Run automation script
-        run: python .\.script\get-nordvpnservers.py
+        run: python  .script/get-nordvpnservers.py
