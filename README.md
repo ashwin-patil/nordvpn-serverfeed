@@ -9,6 +9,6 @@ Python Script : `.script/get-nordvpnservers.py` - Simple python script to downlo
 Github Workflow : [Creating and managing GitHub Actions workflows.](https://docs.github.com/en/actions/using-workflows#creating-a-workflow-file)
 
 Github Actions:
-- [Actions/Checkout](https://github.com/actions/checkout) - https://github.com/actions/checkout
+- [Actions/Checkout](https://github.com/actions/checkout) 
 - [Action/Setup-Python](https://github.com/actions/setup-python)
 - [ ad-m/github-push-action](https://github.com/ad-m/github-push-action)
