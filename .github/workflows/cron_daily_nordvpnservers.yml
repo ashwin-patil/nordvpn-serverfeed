@@ -1,9 +1,6 @@
 ﻿name: Daily Nord VPN Servers Feed
 
 on:
-  push:
-    branches:
-      - main
   schedule:
     - cron: "0 0 * * *" # Runs at 00:00 AM (UTC) everyday (Check https://crontab.tech/)
 
@@ -33,7 +30,7 @@ jobs:
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add .
+          git add nordvpn-servers.csv
           git commit -m "Adding new daily feed" -a
 
       - name: Push changes
