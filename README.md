@@ -1,5 +1,5 @@
 # nordvpn-serverfeed
-Daily updated feed retrtieved via Nord VPN Server API and Github Actions
+Daily updated feed retrieved via Nord VPN Server API and Github Actions
 
 NordVPN Server API : https://api.nordvpn.com/server'
 
