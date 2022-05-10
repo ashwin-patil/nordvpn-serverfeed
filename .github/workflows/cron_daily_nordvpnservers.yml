@@ -34,4 +34,4 @@ jobs:
           git commit -m "Adding new daily feed" -a
 
       - name: Push changes
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@main
